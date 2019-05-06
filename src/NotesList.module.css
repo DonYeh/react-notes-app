@@ -1,0 +1,10 @@
+.notesList {
+	padding: 0;
+	margin: 0;
+}
+
+.notesList li {
+	display: block;
+	list-style: none;
+	color: green;
+}
