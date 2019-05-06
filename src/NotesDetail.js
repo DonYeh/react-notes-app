@@ -21,7 +21,14 @@ export default class NotesDetail extends React.Component {
 		return (
 			<div className={className}>
 				{isEditing ? <NotesEditor text={note.text} /> : note.text}
+				<button onClick={this._toggleIsEditing}>Toggle</button>
 			</div>
 		);
 	}
+
+	_toggleIsEditing = () => {
+		this.setState({
+			isEditing: !this.state.isEditing
+		});
+	};
 }
